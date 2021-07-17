@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border: 1px solid saddlebrown;
+            margin: 5px;
+        }
+        .scalexy{
+            transform: scaleX(0.5) scaleY(0.1);
+        }
+        .scale{
+            transform: scale(0.5, 0.1);
+        }
+        .rotate{
+            transform: rotate(30deg);
+        }
+        .translate{
+            transform: translate(200px);
+        }
+        .translatex{
+            transform: translateX(200px);
+        }
+        .translatey{
+            transform: translatey(100px);
+        }
+        .translatexy{
+            transform: translate(400px, 200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box scalexy"></div>
+    <div class="box scale"></div>
+    <div class="box rotate"></div>
+    <div class="box translate"></div>
+    <div class="box translatex"></div>
+    <div class="box translatey"></div>
+    <div class="box translatexy"></div>
+</body>
+</html>
