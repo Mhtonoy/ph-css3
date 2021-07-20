@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Made by Mhtonoy</title>
+    <style>
+        h1{
+            text-align: center;
+            color:tomato;
+            font-size: 80px;
+        }
+        @keyframes bounce-ball {
+            0%{
+                top:0;
+                left: 0;
+            }
+            25%{
+                top: 189px;
+                left: 26%;
+                background-color: blue;
+            }
+            50%{
+                top: 0px;
+                left: 52%;
+                background-color: cyan;
+            }
+            75%{
+                top: 189px;
+                left: 77%;
+                background-color: lightsalmon;
+            }
+            100%{
+                top: 0px;
+                left: 93%;
+                background-color: blue;
+            }
+            
+        }
+        @keyframes stick{
+            0%{
+                bottom:0;
+                left: 10;
+            }
+            25%{
+                bottom: 0px;
+                left: 24%;
+                
+            }
+            50%{
+                bottom: 0px;
+                left: 50%;
+        
+            }
+            75%{
+                bottom: 0px;
+                left: 75%;
+            }
+            100%{
+                bottom: 0px;
+                left: 89%;
+            }
+            
+        }
+        .stage{
+            background-color: black;
+            border: 1px solid red;
+            width: 60%;
+            min-height: 250px;
+            margin: 15% auto;
+            position: relative;
+            border-radius: 25px;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+        }
+        .stick{
+            width: 80px;
+            height: 10px;
+            background-color: limegreen;
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+        }
+        .stage:hover .ball{
+            animation: bounce-ball 5s linear  infinite alternate;
+        }
+        .stage:hover .stick{
+            animation: stick 5s linear  infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's Play</h1>
+    <div class="stage">
+        <div class="ball"></div>
+        <div class="stick"></div>
+    </div>
+</body>
+</html>
