@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match Made by Mhtonoy</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            background-color: red;
+            padding: 20px;
+            color: whitesmoke;
+            font-weight: 900;
+        }
+        .field{
+            border: 1px solid goldenrod;
+            background-color: greenyellow;
+            height: 500px;
+
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            top: 20px;
+            left: 509px;
+            transition: transform 2s ease-out 0.3s;
+        }
+        .field:hover{
+            height: 535px;
+        }
+        img{
+            transition: transform 0.3s ease-in;
+        }
+        .field:hover img{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .field:hover .ball{
+            transform:  translate(600px, -100px);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>ICC World Cup Final Match</h1>
+    <div class="field">
+        <img src="../images/bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
